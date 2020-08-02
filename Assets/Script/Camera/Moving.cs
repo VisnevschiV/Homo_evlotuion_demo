@@ -10,44 +10,46 @@ public class Moving : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.touchCount>0)
         {
-            _touchPozition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
-
-        if (Input.touchCount == 2)
-        {
-            Touch touchZero = Input.GetTouch(0);
-            Touch touchOne = Input.GetTouch(1);
-
-            Vector2 touchZeroBefo = touchZero.position - touchZero.deltaPosition;
-            Vector2 touchOneBefo = touchOne.position - touchOne.deltaPosition;
-
-            float magnitudeZero = (touchZeroBefo - touchOneBefo).magnitude;
-            float magnitudeOne = (touchZero.position - touchOne.position).magnitude;
-
-            float difference = magnitudeOne - magnitudeZero;
-
-            zoom(difference*0.001f);
-
-        }
-        else
-        {
-            if (Input.touchCount == 1)
+            
+            if (Input.GetMouseButtonDown(0))
             {
-                Touch touchBegin = Input.GetTouch(0);
-                if (touchBegin.phase == TouchPhase.Moved)
+                _touchPozition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
+
+            if (Input.touchCount == 2)
+            {
+                Touch touchZero = Input.GetTouch(0);
+                Touch touchOne = Input.GetTouch(1);
+
+                Vector2 touchZeroBefo = touchZero.position - touchZero.deltaPosition;
+                Vector2 touchOneBefo = touchOne.position - touchOne.deltaPosition;
+
+                float magnitudeZero = (touchZeroBefo - touchOneBefo).magnitude;
+                float magnitudeOne = (touchZero.position - touchOne.position).magnitude;
+
+                float difference = magnitudeOne - magnitudeZero;
+
+                zoom(difference * 0.001f);
+
+            }
+            else
+            {
+                if (Input.touchCount == 1)
                 {
-                    Vector3 direction = _touchPozition - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    transform.position += direction;
+                    Touch touchBegin = Input.GetTouch(0);
+                    if (touchBegin.phase == TouchPhase.Moved)
+                    {
+                        Vector3 direction = _touchPozition - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        transform.position += direction;
+                    }
+
                 }
 
             }
-
-            
-               
-            
         }
+       
     }
     void zoom(float increment)
     {

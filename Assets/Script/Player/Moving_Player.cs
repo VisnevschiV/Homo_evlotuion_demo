@@ -11,6 +11,7 @@ public class Moving_Player : MonoBehaviour
     private bool _moove;
     private Vector3 _target;
     private bool _finish = true;
+    private Collider2D collider2d;
   //  public GameObject Versus_img;
     public float speed;
     private Quaternion rotate;
@@ -19,22 +20,9 @@ public class Moving_Player : MonoBehaviour
 
     void Update()
     {
-        Speed();
-        Vector2 directionPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(directionPoint.y, directionPoint.x) * Mathf.Rad2Deg;
-        rotate = Quaternion.AngleAxis(angle - 90, Vector3.forward);
-        if (Input.touchCount==1)
-        {
-            Touch touchScreen = Input.GetTouch(0);
-            Vector2 touchFirst = touchScreen.deltaPosition;
-            if (touchScreen.phase == TouchPhase.Ended&&touchFirst==new Vector2(0,0))
-            {
-                _target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                _target.z = transform.position.z;
-                _moove = true;
-            }
-
-        }
+        
+                Move();
+        
         if (_moove == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, _target, speed * Time.deltaTime);
@@ -47,7 +35,28 @@ public class Moving_Player : MonoBehaviour
             _moove = false;
         }
 
+        
 
+    }
+
+    private void Move()
+    {
+        Speed();
+        Vector2 directionPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float angle = Mathf.Atan2(directionPoint.y, directionPoint.x) * Mathf.Rad2Deg;
+        rotate = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        if (Input.touchCount == 1)
+        {
+            Touch touchScreen = Input.GetTouch(0);
+            Vector2 touchFirst = touchScreen.deltaPosition;
+            if (touchScreen.phase == TouchPhase.Ended && touchFirst == new Vector2(0, 0))
+            {
+                _target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                _target.z = transform.position.z;
+                _moove = true;
+            }
+
+        }
     }
 
     private void TracesInstantiate(bool finish)
@@ -66,17 +75,13 @@ public class Moving_Player : MonoBehaviour
         _finish = true;
     }
 
+   
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "enemy")
+        if (collision.collider.tag == "NMove")
         {
-            _lowSpeed = true;
-            Debug.Log("Hit");
-            //_buttons.SetActive(true);
-            _moove = false;
-            //Versus_img.SetActive(true);
-            speed = 0;
+            Debug.Log("Can't Move");
         }
         else
         {

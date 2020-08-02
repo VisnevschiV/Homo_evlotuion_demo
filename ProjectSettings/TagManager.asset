@@ -7,6 +7,8 @@ TagManager:
   - text
   - Evolve_button
   - enemy
+  - NMove
+  - Move
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
