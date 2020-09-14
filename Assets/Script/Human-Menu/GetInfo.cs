@@ -6,6 +6,7 @@ public class GetInfo : MonoBehaviour
 {
     public GameObject info;
     public GameObject evolve_button;
+    public string parameter;
     GameObject[] all;
 
     // Update is called once per frame
@@ -18,6 +19,7 @@ public class GetInfo : MonoBehaviour
         }
         evolve_button.SetActive(true);
         info.SetActive(true);
+        evolve.selectedParameter = parameter;
     }
 
 }

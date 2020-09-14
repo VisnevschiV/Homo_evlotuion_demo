@@ -5,33 +5,33 @@ using UnityEngine;
 public class evolutions : MonoBehaviour
 {
    
-    int i_creativity;
-    int i_speaking;
-    int i_safe_place;
-    int i_footprints;
-    int i_protection;
-    int i_teamfight;
-    int i_numbers;
-    int i_hierarchy;
-    int i_tactics;
-    int i_Religion;
-    int i_Stone;
-    int i_Stick;
-    int i_Fire;
-    int i_Weapons;
-    int i_Food;
-    int F_Biped;
-    int F_Mute;
-    int F_Danger;
-    int F_Power;
-    int F_Vision;
-    int F_Analyzing;
-    int F_Forest_vison;
-    int F_Running;
-    int F_Swimming;
-    int F_Endurance;
-    int F_Imunity;
-    int F_Regeneration;
+    bool i_creativity = false;
+    public static bool i_speaking = false;
+    bool i_safe_place = false;
+    bool i_footprints = false;
+    bool i_protection = false;
+    bool i_teamfight = false;
+    bool i_numbers = false;
+    bool i_hierarchy = false;
+    bool i_tactics = false;
+    bool i_Religion = false;
+    bool i_Stone = false;
+    bool i_Stick = false;
+    bool i_Fire = false;
+    bool i_Weapons = false;
+    bool i_Food = false;
+    bool F_Biped = false;
+    bool F_Mute = false;
+    bool F_Danger = false;
+    bool F_Power = false;
+    bool F_Vision = false;
+    bool F_Analyzing = false;
+    bool F_Forest_vison = false;
+    bool F_Running = false;
+    bool F_Swimming = false;
+    bool F_Endurance = false;
+    bool F_Imunity = false;
+    bool F_Regeneration = false;
 
 
 }
