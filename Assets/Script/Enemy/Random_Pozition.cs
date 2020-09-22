@@ -78,20 +78,20 @@ public class Random_Pozition : MonoBehaviour
     IEnumerator StartMove(int pozitionX, int pozitionY)
     {
         Vector2 distance = new Vector2(pozitionX, pozitionY);
-        Debug.Log("X=" + pozitionX + " Y = " + pozitionY);
      Checkpoint:
         i=0;
         while (/*Vector2.Distance(transform.position, distance) > 0.5f*/!reachPoint)
         {
+            
             i++;
             transform.position = Vector2.MoveTowards(transform.position, distance, speed * Time.deltaTime);
             if(Vector2.Distance(transform.position, distance) <= 0.5f){
                 reachPoint = true;
             }
+            // cand I ajunge la 100 iesim din while ca sa vedem daca am atins cv si schimbam directia
             if(i > 100){
                 break;
                 goto Checkpoint;
-                Debug.Log("checkpoint");
             }
             yield return null;
         }
