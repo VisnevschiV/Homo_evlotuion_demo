@@ -16,6 +16,7 @@ public class sceneManagment : MonoBehaviour
     public GameObject phisical;
     private bool P = false;
    public void WorldMenu(){
+       Time.timeScale = 0;
       Game.SetActive(false);
        World.SetActive(true);
        Intelectual.SetActive(false);
@@ -24,6 +25,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void GameRoom(){
+       Time.timeScale = 1;
        Game.SetActive(true);
        World.SetActive(false);
        Intelectual.SetActive(false);
@@ -32,6 +34,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void HumanMenu(){
+       Time.timeScale = 0;
        Game.SetActive(false);
        World.SetActive(false);
        Intelectual.SetActive(false);
@@ -39,6 +42,7 @@ public class sceneManagment : MonoBehaviour
        phisical.SetActive(false);
    }
    public void Intelect(){
+       Time.timeScale = 0;
        Game.SetActive(false);
        World.SetActive(false);
        Intelectual.SetActive(true);
@@ -47,6 +51,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void phisic(){
+       Time.timeScale = 0;
      Game.SetActive(false);
        World.SetActive(false);
        Intelectual.SetActive(false);
