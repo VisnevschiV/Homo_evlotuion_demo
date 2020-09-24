@@ -5,33 +5,37 @@ using UnityEngine;
 public class evolutions : MonoBehaviour
 {
    
-    bool i_creativity = false;
+    public static bool i_creativity = false;
     public static bool i_speaking = false;
-    bool i_safe_place = false;
-    bool i_footprints = false;
-    bool i_protection = false;
-    bool i_teamfight = false;
-    bool i_numbers = false;
-    bool i_hierarchy = false;
-    bool i_tactics = false;
-    bool i_Religion = false;
-    bool i_Stone = false;
-    bool i_Stick = false;
-    bool i_Fire = false;
-    bool i_Weapons = false;
-    bool i_Food = false;
-    bool F_Biped = false;
-    bool F_Mute = false;
-    bool F_Danger = false;
-    bool F_Power = false;
-    bool F_Vision = false;
-    bool F_Analyzing = false;
-    bool F_Forest_vison = false;
-    bool F_Running = false;
-    bool F_Swimming = false;
-    bool F_Endurance = false;
-    bool F_Imunity = false;
-    bool F_Regeneration = false;
+    public static bool i_safe_place = false;
+    public static bool i_footprints = false;
+    public static bool i_protection = false;
+    public static bool i_teamfight = false;
+    public static bool i_numbers = false;
+    public static bool i_hierarchy = false;
+    public static bool i_tactics = false;
+    public static bool i_Religion = false;
+    public static bool i_Stone = false;
+    public static bool i_Stick = false;
+    public static bool i_Fire = false;
+    public static bool i_Weapons = false;
+    public static bool i_Food = false;
+    public static bool F_Biped = false;
+    public static bool F_Mute = false;
+    public static bool F_Danger = false;
+    public static bool F_Power = false;
+    public static bool F_Vision = false;
+    public static bool F_Analyzing = false;
+    public static bool F_Forest_vison = false;
+    public static bool F_Running = false;
+    public static bool F_Swimming = false;
+    public static bool F_Endurance = false;
+    public static bool F_Imunity = false;
+    public static bool F_Regeneration = false;
 
-
+    void Update(){
+        if(F_Biped == true){
+            Debug.Log("evoolutie completata");
+        }
+    }
 }

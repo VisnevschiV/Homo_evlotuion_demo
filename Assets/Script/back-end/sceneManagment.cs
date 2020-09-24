@@ -5,17 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class sceneManagment : MonoBehaviour
 {
-    public GameObject Human;
-    private bool H = false;
-    public GameObject Game;
-    private bool G = true;
-    public GameObject World;
-    private bool W = false;
-    public GameObject Intelectual;
-    private bool I = false;
-    public GameObject phisical;
-    private bool P = false;
+    public  GameObject Human;
+    public  GameObject Game;
+    public  GameObject World;
+    public  GameObject Intelectual;
+    public  GameObject phisical;
+
+    public static int scenenr;
    public void WorldMenu(){
+       scenenr = 1;
        Time.timeScale = 0;
       Game.SetActive(false);
        World.SetActive(true);
@@ -25,6 +23,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void GameRoom(){
+       scenenr = 0;
        Time.timeScale = 1;
        Game.SetActive(true);
        World.SetActive(false);
@@ -34,6 +33,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void HumanMenu(){
+        scenenr =2;
        Time.timeScale = 0;
        Game.SetActive(false);
        World.SetActive(false);
@@ -42,6 +42,7 @@ public class sceneManagment : MonoBehaviour
        phisical.SetActive(false);
    }
    public void Intelect(){
+       scenenr = 3;
        Time.timeScale = 0;
        Game.SetActive(false);
        World.SetActive(false);
@@ -51,6 +52,7 @@ public class sceneManagment : MonoBehaviour
        
    }
    public void phisic(){
+       scenenr = 4;
        Time.timeScale = 0;
      Game.SetActive(false);
        World.SetActive(false);
