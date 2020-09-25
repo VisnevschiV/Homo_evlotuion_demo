@@ -14,6 +14,7 @@ public class evolve : MonoBehaviour
             case 1:
                 evolutions.F_Biped = true;
                 Debug.Log("evolutions.F_Biped");
+                newEvolutions.biss();
             break;
 
             case 2:

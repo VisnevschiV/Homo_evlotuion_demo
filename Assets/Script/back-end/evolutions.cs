@@ -33,9 +33,4 @@ public class evolutions : MonoBehaviour
     public static bool F_Imunity = false;
     public static bool F_Regeneration = false;
 
-    void Update(){
-        if(F_Biped == true){
-            Debug.Log("evoolutie completata");
-        }
-    }
 }
