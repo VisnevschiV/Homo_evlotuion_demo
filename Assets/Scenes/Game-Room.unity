@@ -4743,7 +4743,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2232821260656631324}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4631421319634241555}
+        m_TargetAssemblyTypeName: UI_animator, Assembly-CSharp
+        m_MethodName: fightF
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &435196130362798513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7636,6 +7648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 895b9a7a8ec304c6c887e8d4ca348e5a, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!224 &1782303360818226926
@@ -7907,7 +7920,7 @@ RectTransform:
   m_GameObject: {fileID: 4631421319634241553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.00037624018, y: 0.00037624018, z: 0.00037624018}
+  m_LocalScale: {x: 0, y: 0, z: 0.00037624018}
   m_Children:
   - {fileID: 8476119389273320700}
   - {fileID: 3414343578562609887}
@@ -13925,6 +13938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: f8d4c510ec4c1432db5fdecd61fe1a90, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!1 &4392806463862667331
@@ -14183,6 +14197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: b5f0c4a6272fb4b5fb58875d241796a8, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!114 &4548786762753034218
@@ -14274,6 +14289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 66d164a6f42c5450d8e3a6b626def153, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!222 &4569825577710699727
@@ -14557,6 +14573,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960863695458108057}
+  - component: {fileID: 4631421319634241554}
+  - component: {fileID: 4631421319634241555}
   m_Layer: 5
   m_Name: info-menu
   m_TagString: Untagged
@@ -14564,6 +14582,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &4631421319634241554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631421319634241553}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fbcbcfac1cb6648328eed71374ec54e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4631421319634241555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631421319634241553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8886ad9e0db4d4adeacc4b7777d51edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 4631421319634241553}
+  list: {fileID: 3987197616438217278}
+  where: {fileID: 6746284909331476026}
+  img: {fileID: 0}
+  place: {fileID: 881267903448693090}
 --- !u!4 &4646080515633317192
 Transform:
   m_ObjectHideFlags: 0
@@ -15331,6 +15385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 472f324f06bcd48ea9ab8d7cd5a6643c, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!114 &4975448006813913642
@@ -17051,7 +17106,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2461977059464719498}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4631421319634241555}
+        m_TargetAssemblyTypeName: UI_animator, Assembly-CSharp
+        m_MethodName: infoF
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5577488533781717966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18883,6 +18950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 4903ac826dfc84874bd643583090fcf7, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!1 &6377803873736549465
@@ -19629,7 +19697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 54496144369602114}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4631421319634241555}
+        m_TargetAssemblyTypeName: UI_animator, Assembly-CSharp
+        m_MethodName: map
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &6745632189019893099
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20499,6 +20579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 07d57d4d8811b42e596f14c4b8d95ef8, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!222 &7097565148179024346
@@ -22963,7 +23044,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1105155248795894095}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4631421319634241555}
+        m_TargetAssemblyTypeName: UI_animator, Assembly-CSharp
+        m_MethodName: eye
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8126833776826168803
 GameObject:
   m_ObjectHideFlags: 0
@@ -24850,6 +24943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 4631421319634241553}
   list: {fileID: 3987197616438217278}
+  where: {fileID: 0}
   img: {fileID: 21300000, guid: 955a7325d043549beb7fcc8ad5548018, type: 3}
   place: {fileID: 881267903448693090}
 --- !u!114 &8946428736682344090
