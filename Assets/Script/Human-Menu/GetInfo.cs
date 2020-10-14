@@ -19,13 +19,12 @@ public class GetInfo : MonoBehaviour
         }
         evolve_button.SetActive(true);
         info.SetActive(true);
-        if(sceneManagment.scenenr == 4){
+        if(true){
               switch (this.name)
               {
               
               case "Biped-Button":
                      evolve.selectedParameter = 1;
-                     Debug.Log("naaah");
               break;
               
               case "Mute-Button":
@@ -72,9 +71,57 @@ public class GetInfo : MonoBehaviour
                      evolve.selectedParameter = 12;
               break;
               
-              };
-        }else if(sceneManagment.scenenr == 3){
-               
+             /* };
+        }else if(true){
+              switch (this.name)
+              {*/
+              
+              case "House-Button":
+                     evolve.selectedParameter = 13;
+              break;
+              case "Protection-Button":
+                     evolve.selectedParameter = 14;
+              break;
+              case "TeamFight-Button":
+                     evolve.selectedParameter = 15;
+              break;
+              case "Numbers-Button":
+                     evolve.selectedParameter = 16;
+              break;
+              case "Hierarchy-Button":
+                     evolve.selectedParameter = 17;
+              break;
+              case "Tactics-Button":
+                     evolve.selectedParameter = 18;
+              break;
+              case "Religion-Button":
+                     evolve.selectedParameter = 19;
+              break;
+              case "Stone-Button":
+                     evolve.selectedParameter = 20;
+              break;
+              case "Stick-Button":
+                     evolve.selectedParameter = 21;
+              break;
+              case "Fire-Button":
+                     evolve.selectedParameter = 22;
+              break;
+              case "Axe-Button":
+                     evolve.selectedParameter = 23;
+              break;
+              case "Food-Button":
+                     evolve.selectedParameter = 24;
+              break;
+              case "Speaking-Button":
+                     evolve.selectedParameter = 25;
+              break;
+              case "FootPrints-Button":
+                     evolve.selectedParameter = 26;
+              break;
+              case "creativity-Button":
+                     evolve.selectedParameter = 27;
+              break;
+              }
         }       
         
     }

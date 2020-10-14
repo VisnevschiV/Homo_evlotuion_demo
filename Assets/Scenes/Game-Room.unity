@@ -3874,9 +3874,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1066.0177, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &147634938998688596
@@ -3955,7 +3955,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987437828843835058}
-  - component: {fileID: 7737997437534483812}
   m_Layer: 0
   m_Name: Tactics
   m_TagString: text
@@ -4316,9 +4315,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 940.2655, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &305233970608110683
@@ -4340,9 +4339,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 437.25668, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326266454225228966
@@ -4452,21 +4451,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3539708518164105819}
   m_CullTransparentMesh: 0
---- !u!114 &336719623965042487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8211299171624712882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 8211299171624712882}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Fire
 --- !u!4 &353412002637149032
 Transform:
   m_ObjectHideFlags: 0
@@ -4629,8 +4613,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9007628838793280799}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 6000745557024634676}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -4909,8 +4893,9 @@ GameObject:
   - component: {fileID: 52883009284239189}
   - component: {fileID: 3346995790133750152}
   - component: {fileID: 507860823524895375}
+  - component: {fileID: 507860823524895376}
   m_Layer: 5
-  m_Name: 'Hierarchy-Button '
+  m_Name: Hierarchy-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4928,6 +4913,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &507860823524895376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507860823524895374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 819606989513243850}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &512171335814970620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5005,8 +5005,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 962979402874197895}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 4201368995791005181}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -5389,7 +5389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 274, y: -384}
+  m_AnchoredPosition: {x: 272.10004, y: -384}
   m_SizeDelta: {x: 43, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &694030159969269077
@@ -5546,7 +5546,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5342957507654709848}
-  - component: {fileID: 9007628838793280799}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: text
@@ -5783,7 +5782,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6325481347456818784}
-  - component: {fileID: 1508224487604237657}
   m_Layer: 0
   m_Name: Hierarchy
   m_TagString: text
@@ -6012,21 +6010,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &902910439202439370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2152702827908281769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 2152702827908281769}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Food
 --- !u!114 &904004674688747220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6146,21 +6129,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6593802411315683903}
   m_CullTransparentMesh: 0
---- !u!114 &962979402874197895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7941639808222542123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 7941639808222542123}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Religion
 --- !u!4 &986051062975613325
 Transform:
   m_ObjectHideFlags: 0
@@ -6765,8 +6733,9 @@ GameObject:
   - component: {fileID: 9003845323864158333}
   - component: {fileID: 6687911784790282609}
   - component: {fileID: 1283256794567954171}
+  - component: {fileID: 1283256794567954172}
   m_Layer: 5
-  m_Name: 'TeamFight-Button '
+  m_Name: TeamFight-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6784,6 +6753,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1283256794567954172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283256794567954170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 7324375405436781054}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!1 &1288580348104406293
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,7 +6996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6310894779051692924}
   m_Layer: 0
-  m_Name: 'phizical '
+  m_Name: phizical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7064,14 +7048,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1695135280394875923}
-  - component: {fileID: 4752733924163801280}
   m_Layer: 0
   m_Name: Creativity
   m_TagString: text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1447072590120226144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7197,21 +7180,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: A.A. can go in the water for a while, where no enemies can kill him.
---- !u!114 &1508224487604237657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819606989513243850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 819606989513243850}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Hierarchy
 --- !u!1 &1525537102282737621
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,7 +7348,6 @@ GameObject:
   - component: {fileID: 549078675845245602}
   - component: {fileID: 2700541532483281358}
   - component: {fileID: 1590582412693603777}
-  - component: {fileID: 1590582412693603778}
   m_Layer: 5
   m_Name: House-Button
   m_TagString: Untagged
@@ -7397,21 +7364,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590582412693603776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1590582412693603778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590582412693603776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  info: {fileID: 3223624437831774302}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &1596327547272410696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7496,7 +7454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1684910897363835257
 Transform:
   m_ObjectHideFlags: 0
@@ -7574,21 +7532,6 @@ RectTransform:
   m_AnchoredPosition: {x: -442, y: 496}
   m_SizeDelta: {x: 1031, y: 245}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1716541046776302080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7975448837981708346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 7975448837981708346}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Numbers
 --- !u!222 &1769804921205904890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7612,7 +7555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1780951804725183633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7686,7 +7629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309, y: -367}
+  m_AnchoredPosition: {x: 307.10004, y: -367}
   m_SizeDelta: {x: 43, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1786914982987104599
@@ -8111,9 +8054,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 563.0089, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2003834627245463064
@@ -8321,8 +8264,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 336719623965042487}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2447925599456526291}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -8429,7 +8372,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9026041403031159052}
-  - component: {fileID: 902910439202439370}
   m_Layer: 0
   m_Name: Food
   m_TagString: text
@@ -8915,8 +8857,9 @@ GameObject:
   - component: {fileID: 8765066129925704623}
   - component: {fileID: 2069912088407115182}
   - component: {fileID: 2447925599456526290}
+  - component: {fileID: 2447925599456526291}
   m_Layer: 5
-  m_Name: 'Fire-Button '
+  m_Name: Fire-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8934,6 +8877,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2447925599456526291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447925599456526289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 8211299171624712882}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &2461977059464719498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9075,6 +9033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5499751164640321849}
+  - component: {fileID: 2479252125796659570}
   m_Layer: 0
   m_Name: Evolve-Buttons
   m_TagString: Untagged
@@ -9082,6 +9041,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2479252125796659570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479252125796659569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7642140dc10a54d03ab47b5d21af7fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &2480801098847573622
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9619,8 +9590,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5823163549787476397}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1590582412693603777}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -9957,8 +9928,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5858105420639747844}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 2852809278125951116}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -10016,6 +9987,7 @@ GameObject:
   - component: {fileID: 7442530655613177472}
   - component: {fileID: 2842747848539871238}
   - component: {fileID: 2852809278125951115}
+  - component: {fileID: 2852809278125951116}
   m_Layer: 5
   m_Name: Protection-Button
   m_TagString: Untagged
@@ -10035,6 +10007,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2852809278125951116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852809278125951114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 3480789069795633390}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &2859882699305210087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11034,7 +11021,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7861985141779726921}
-  - component: {fileID: 5823163549787476397}
   m_Layer: 0
   m_Name: House
   m_TagString: text
@@ -11165,8 +11151,9 @@ GameObject:
   - component: {fileID: 174891731500613231}
   - component: {fileID: 5886110546881873972}
   - component: {fileID: 3252901067410094132}
+  - component: {fileID: 3252901067410094133}
   m_Layer: 5
-  m_Name: 'Tactics-Button '
+  m_Name: Tactics-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11184,6 +11171,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3252901067410094133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3252901067410094131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 182634845636315908}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &3273206227873217401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11214,21 +11216,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3273879196756270304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282198527071155719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 5282198527071155719}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Stone
 --- !u!222 &3281982615532556260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11456,8 +11443,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1508224487604237657}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 507860823524895376}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -11882,7 +11869,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7207252602815908672}
-  - component: {fileID: 5858105420639747844}
   m_Layer: 0
   m_Name: Protection
   m_TagString: text
@@ -12132,7 +12118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309, y: -402}
+  m_AnchoredPosition: {x: 307.1, y: -402}
   m_SizeDelta: {x: 43, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3580348219892351996
@@ -12397,6 +12383,7 @@ GameObject:
   - component: {fileID: 3553299528256817349}
   - component: {fileID: 5359509361355064365}
   - component: {fileID: 3700221843800023988}
+  - component: {fileID: 3700221843800023989}
   m_Layer: 5
   m_Name: Speaking-Button
   m_TagString: Untagged
@@ -12416,6 +12403,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3700221843800023989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3700221843800023987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 6677513764621861817}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &3707863245784711605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12769,9 +12771,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 814.5133, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3891238846710166396
@@ -13389,6 +13391,7 @@ GameObject:
   - component: {fileID: 9193012335603909084}
   - component: {fileID: 4582673677565510528}
   - component: {fileID: 4117147121055150632}
+  - component: {fileID: 4117147121055150633}
   m_Layer: 5
   m_Name: Food-Button
   m_TagString: Untagged
@@ -13408,6 +13411,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4117147121055150633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4117147121055150631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 2152702827908281769}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!1 &4139643037818004518
 GameObject:
   m_ObjectHideFlags: 0
@@ -13585,7 +13603,7 @@ GameObject:
   - component: {fileID: 4201368995791005180}
   - component: {fileID: 4201368995791005181}
   m_Layer: 5
-  m_Name: 'Religion-Button '
+  m_Name: Religion-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13612,9 +13630,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4201368995791005179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  info: {fileID: 7941639808222542123}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!222 &4208364503745050211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13954,8 +13975,9 @@ GameObject:
   - component: {fileID: 329556502212255140}
   - component: {fileID: 7423862198052824111}
   - component: {fileID: 4392806463862667332}
+  - component: {fileID: 4392806463862667333}
   m_Layer: 5
-  m_Name: 'Numbers-Button '
+  m_Name: Numbers-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13973,6 +13995,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4392806463862667333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392806463862667331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 7975448837981708346}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!222 &4394121364543005979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13981,21 +14018,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119381926081859721}
   m_CullTransparentMesh: 0
---- !u!114 &4395959853019401705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805037195073083360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 4805037195073083360}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Footprints
 --- !u!222 &4403534450869432272
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14343,8 +14365,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 902910439202439370}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 4117147121055150633}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -14688,9 +14710,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 311.50446, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4669592899670618196
@@ -14934,21 +14956,6 @@ Transform:
   m_Father: {fileID: 8052743037459032002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4752733924163801280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430636481087471840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 1430636481087471840}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: 
 --- !u!1 &4768330420349868004
 GameObject:
   m_ObjectHideFlags: 0
@@ -15029,7 +15036,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4534736849186614991}
-  - component: {fileID: 4395959853019401705}
   m_Layer: 0
   m_Name: Footprints
   m_TagString: text
@@ -15202,21 +15208,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4872887355676267542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5397955273436801841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 5397955273436801841}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Stick
 --- !u!4 &4893634795958172541
 Transform:
   m_ObjectHideFlags: 0
@@ -15655,7 +15646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: -384}
+  m_AnchoredPosition: {x: 133.5, y: -384}
   m_SizeDelta: {x: 43, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5095045110399775214
@@ -15990,7 +15981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5198703096279580352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16259,7 +16250,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8603566689229325945}
-  - component: {fileID: 3273879196756270304}
   m_Layer: 0
   m_Name: Stone
   m_TagString: text
@@ -16519,8 +16509,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7177326284751031607}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 3700221843800023989}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -16578,7 +16568,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2603735013879624797}
-  - component: {fileID: 4872887355676267542}
   m_Layer: 0
   m_Name: Stick
   m_TagString: text
@@ -16837,8 +16826,9 @@ GameObject:
   - component: {fileID: 7162454173696628599}
   - component: {fileID: 9216937468868525962}
   - component: {fileID: 5529436148373903990}
+  - component: {fileID: 5529436148373903991}
   m_Layer: 5
-  m_Name: 'Stone-Button '
+  m_Name: Stone-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16856,6 +16846,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5529436148373903991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529436148373903989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 5282198527071155719}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &5534191924326100855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17487,21 +17492,6 @@ Transform:
   m_Father: {fileID: 1318268798860461893}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5823163549787476397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3223624437831774302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 3223624437831774302}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: House
 --- !u!114 &5826016737050612052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17601,21 +17591,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5858105420639747844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3480789069795633390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 3480789069795633390}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Protection
 --- !u!222 &5867129959951677255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17683,8 +17658,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7737997437534483812}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 3252901067410094133}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -17874,8 +17849,9 @@ GameObject:
   - component: {fileID: 5248893501779472832}
   - component: {fileID: 406533273072967946}
   - component: {fileID: 6000745557024634675}
+  - component: {fileID: 6000745557024634676}
   m_Layer: 5
-  m_Name: 'Axe-Button '
+  m_Name: Axe-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17893,6 +17869,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6000745557024634676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6000745557024634674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 744198483990381229}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &6013662671841055518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19210,8 +19201,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4752733924163801280}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 7460104534109438478}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -19342,8 +19333,9 @@ GameObject:
   - component: {fileID: 1907137764197539131}
   - component: {fileID: 6868352330343162912}
   - component: {fileID: 6593802411315683904}
+  - component: {fileID: 6593802411315683905}
   m_Layer: 5
-  m_Name: 'Stick-Button '
+  m_Name: Stick-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19361,6 +19353,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6593802411315683905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593802411315683903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 5397955273436801841}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!114 &6598459167743615833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19517,7 +19524,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5519886327514681735}
-  - component: {fileID: 7177326284751031607}
   m_Layer: 0
   m_Name: Speaking
   m_TagString: text
@@ -19568,8 +19574,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9111135764777230585}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1283256794567954172}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -19825,9 +19831,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 185.75223, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6785919444886908889
@@ -20050,8 +20056,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4872887355676267542}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 6593802411315683905}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -20898,21 +20904,6 @@ Transform:
   m_Father: {fileID: 6778158626603858057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7177326284751031607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6677513764621861817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 6677513764621861817}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: speaking
 --- !u!222 &7186528007045884382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21174,7 +21165,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5581341220694641991}
-  - component: {fileID: 9111135764777230585}
   m_Layer: 0
   m_Name: TeamFight
   m_TagString: text
@@ -21638,8 +21628,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1716541046776302080}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 4392806463862667333}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
@@ -21701,6 +21691,7 @@ GameObject:
   - component: {fileID: 2539776335908526806}
   - component: {fileID: 8357015469630918343}
   - component: {fileID: 7443217753715740893}
+  - component: {fileID: 7443217753715740894}
   m_Layer: 5
   m_Name: FootPrints-Button
   m_TagString: Untagged
@@ -21720,6 +21711,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7443217753715740894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443217753715740892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 4805037195073083360}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!1 &7450371057168983440
 GameObject:
   m_ObjectHideFlags: 0
@@ -21795,8 +21801,9 @@ GameObject:
   - component: {fileID: 2935005994546592557}
   - component: {fileID: 6528383159935071839}
   - component: {fileID: 7460104534109438477}
+  - component: {fileID: 7460104534109438478}
   m_Layer: 5
-  m_Name: 'creativity-Button '
+  m_Name: creativity-Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21814,6 +21821,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab8b431225e14847b64b65edd663b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7460104534109438478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460104534109438476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 1430636481087471840}
+  evolve_button: {fileID: 5198672518197650742}
+  parameter: 
 --- !u!222 &7463041075961849155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22015,9 +22037,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 60, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7599824854032989097
@@ -22303,21 +22325,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7737997437534483812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182634845636315908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 182634845636315908}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Tactics
 --- !u!224 &7745715355342438988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22759,7 +22766,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2601019430824385288}
-  - component: {fileID: 962979402874197895}
   m_Layer: 0
   m_Name: Religion
   m_TagString: text
@@ -22825,7 +22831,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645881005567042086}
-  - component: {fileID: 1716541046776302080}
   m_Layer: 0
   m_Name: Numbers
   m_TagString: text
@@ -23222,7 +23227,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1186400067012156808}
-  - component: {fileID: 336719623965042487}
   m_Layer: 0
   m_Name: Fire
   m_TagString: text
@@ -23632,7 +23636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4395959853019401705}
+      - m_Target: {fileID: 7443217753715740894}
         m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
@@ -24457,7 +24461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: -419}
+  m_AnchoredPosition: {x: 133.5, y: -419}
   m_SizeDelta: {x: 43, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8739060844900762084
@@ -25151,9 +25155,9 @@ RectTransform:
   m_Father: {fileID: 4897975968873701916}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.032}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 688.7611, y: -114.45}
   m_SizeDelta: {x: 120, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &9003452851414212922
@@ -25260,21 +25264,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9007628838793280799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744198483990381229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 744198483990381229}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: Weapons
 --- !u!1 &9013058162259589943
 GameObject:
   m_ObjectHideFlags: 0
@@ -25557,21 +25546,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Creativity
---- !u!114 &9111135764777230585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7324375405436781054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd8e14a88e214c4db3a87b55ca42446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: {fileID: 7324375405436781054}
-  evolve_button: {fileID: 5198672518197650742}
-  parameter: TeamFight
 --- !u!114 &9113653400367391830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25889,8 +25863,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3273879196756270304}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 5529436148373903991}
+        m_TargetAssemblyTypeName: GetInfo, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
