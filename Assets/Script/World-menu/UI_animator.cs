@@ -3,37 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using System.Collections;
+
 
 public class UI_animator : MonoBehaviour
 {
-    private static int lvl;
-    public GameObject info;
-    public GameObject list;
-    public   GameObject where;
-    public static GameObject look;
-    public static GameObject Fstyle;
+    private static int lvl; // Monitorizeaza unde ne aflam
+    public GameObject info; // Itemul Mare ce contine butoanele(Obiectul-Tata)
+    public GameObject list; // lista cu animale(ptu animatia de micsorare)
+    public   Button where; // butonul cu harta
+    public static GameObject look; // butonul cu ochi
+    public static GameObject Fstyle; // Butonul cu pumn
 
-    public static GameObject who;
+    public static GameObject Story; // Butonul cu Lupa
 
-    public static GameObject Story;
+    public Sprite img; //imaginea pentru Who
+    public Sprite newMap; // Mapa Cu informatii
+    public Button place; //tot who
+  
 
-    public Sprite img;
-    public Button place;
-
-   public void onClick()
+    // Cand fac click pe animal
+    public void onClick()
     {
-        place.image.sprite = img;
-        info.SetActive(true); 
+        
+        place.image.sprite = img;// schimb imaginea de sus
+        info.SetActive(true);   
         LeanTween.scale(info , new Vector3(1f,1f,8), 1);
         LeanTween.scale(list, new Vector3(0.9f,0.9f,4),1);
-        look = GameObject.Find("look");
-        Fstyle = GameObject.Find("fight");
-        Story = GameObject.Find("info");
-        who = GameObject.Find("who");
+        look = GameObject.Find("look");//?
+        Fstyle = GameObject.Find("fight");//?
+        Story = GameObject.Find("info");//?
         lvl = 0;        
         
 
     }
+    // orice nu e buton, bentru a merge iar la world menu
     public void bckClick()
     {
         if(lvl ==0){
@@ -44,12 +48,13 @@ public class UI_animator : MonoBehaviour
             
         }
     }
+
     public void map()
     {
-
-        Animator animator = info.GetComponent<Animator>();
-        bool map = animator.GetBool("map");
-        animator.SetBool("map", !map);
+        //Animator animator = info.GetComponent<Animator>();
+        //bool map = animator.GetBool("map");
+       // animator.SetBool("map", !map);
+        where.image.sprite = newMap;
 
     }
     public void eye()
@@ -61,7 +66,7 @@ public class UI_animator : MonoBehaviour
 
 
     }
-
+// F de la Function
     public void fightF()
     {
 

@@ -10,7 +10,6 @@ public class animal : MonoBehaviour
     int speed;
     int Damage;
     int FightDistance;
-    int tacticsLVL;
     int endurance;
     bool aggresive;
     bool scared;

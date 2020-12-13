@@ -68,45 +68,51 @@ public class evolve : MonoBehaviour
                 
             break;
             case 14:
+                evolutions.i_protection = true;
                 newEvolutions.protector();
             break;
             case 15:
+                evolutions.i_teamfight = true;
                 newEvolutions.crowd_control();
             break;
             case 16:
-                
+                evolutions.i_numbers = true;
             break;
             case 17:
-                
+                evolutions.i_hierarchy = true;
             break;
             case 18:
-                
+                evolutions.i_tactics = true;
             break;
             case 19:
-                
+                evolutions.i_Religion = true;
             break;
             case 20:
+                evolutions.i_Stone = true;
                 newEvolutions.stones();
             break;
             case 21:
-                
+                evolutions.i_Stick = true;
             break;
             case 22:
+                evolutions.i_Fire = true;
                 newEvolutions.hot();
             break;
             case 23:
-                
+                evolutions.i_Weapons = true;
             break;
             case 24:
-                
+                evolutions.i_Food = true;
             break;
             case 25:
+                evolutions.i_speaking = true;
                 newEvolutions.speak();
             break;
             case 26:
-                
+                evolutions.i_footprints = true;
             break;
             case 27:
+                evolutions.i_creativity = true;
                 newEvolutions.brain();
             break;
 
